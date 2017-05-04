@@ -1,2 +1,2 @@
 # My-Vim-Setup
-My files for VIM usage
+My files for VIM and TMUX usage
