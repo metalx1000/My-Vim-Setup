@@ -7,9 +7,7 @@ call vundle#rc()
 " " For GitHub repos, you specify plugins using the
 " " 'user/repository' format
 Plugin 'gmarik/vundle'
-" To get plugins from Vim Scripts, you can reference the plugin
-" " by name as it appears on the site
-Plugin 'web-indent'
+Plugin 'lukaszb/vim-web-indent'
 
 "this is my VIMRC file
 syntax on
@@ -85,6 +83,7 @@ set number
 
 "remove all trailing whitespace by pressing F5
 nnoremap <F5> mp:let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>'pzz
+nnoremap <F6> mq:set filetype=html<CR>gg=G'q
 
 "uses system clipboard when yanking (center click)
 set clipboard=unnamed
