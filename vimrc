@@ -20,7 +20,8 @@ filetype plugin indent on
 
 command! Wq :wq
 command! W :w
-
+ab wq <ESC>dw:wq<CR>
+ab Wq <ESC>dw:wq<CR>
 set path+=**
 set wildmenu
 
