@@ -62,6 +62,7 @@ endif
 nnoremap ,html :-1read $HOME/.vim/skeleton/bootlist.html<CR>3j9li
 nnoremap ,nav :-1read $HOME/.vim/skeleton/navbar<CR>/WebSite<CR>cit
 nnoremap ,modal :-1read $HOME/.vim/skeleton/modal<CR>
+nnoremap ,sudo :-1read $HOME/.vim/skeleton/asroot.sh<CR>
 
 nnoremap ,getlist :-1read $HOME/.vim/skeleton/getlist.js<CR>i
 
