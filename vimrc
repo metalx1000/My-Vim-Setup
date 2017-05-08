@@ -63,6 +63,7 @@ nnoremap ,html :-1read $HOME/.vim/skeleton/bootlist.html<CR>3j9li
 nnoremap ,nav :-1read $HOME/.vim/skeleton/navbar<CR>/WebSite<CR>cit
 nnoremap ,modal :-1read $HOME/.vim/skeleton/modal<CR>
 nnoremap ,sudo :-1read $HOME/.vim/skeleton/asroot.sh<CR>
+nnoremap ,cgi :-1read /home/metalx1000/.vim/skeleton/cgi.sh<CR>
 
 nnoremap ,getlist :-1read $HOME/.vim/skeleton/getlist.js<CR>i
 
