@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 echo "Content-type: text/plain\n\n"
 echo "Form variables :"
 echo ""

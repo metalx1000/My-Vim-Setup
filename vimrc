@@ -64,6 +64,7 @@ nnoremap ,nav :-1read $HOME/.vim/skeleton/navbar<CR>/WebSite<CR>cit
 nnoremap ,modal :-1read $HOME/.vim/skeleton/modal<CR>
 nnoremap ,sudo :-1read $HOME/.vim/skeleton/asroot.sh<CR>
 nnoremap ,cgi :-1read /home/metalx1000/.vim/skeleton/cgi.sh<CR>
+nnoremap ,chello :-1read /home/metalx1000/.vim/skeleton/chello.c<CR>jjjjf/
 
 nnoremap ,getlist :-1read $HOME/.vim/skeleton/getlist.js<CR>i
 
