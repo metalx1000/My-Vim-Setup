@@ -13,6 +13,10 @@ Plugin 'lukaszb/vim-web-indent'
 syntax on
 set shiftwidth=2 softtabstop=2 expandtab
 
+"set leader 
+let mapleader = ","
+
+
 "I don't like auto indent
 "set noautoindent
 "filetype indent on
@@ -59,14 +63,14 @@ if has("autocmd")
 endif
 
 "insert templates
-nnoremap ,html :-1read $HOME/.vim/skeleton/bootlist.html<CR>3j9li
-nnoremap ,nav :-1read $HOME/.vim/skeleton/navbar<CR>/WebSite<CR>cit
-nnoremap ,modal :-1read $HOME/.vim/skeleton/modal<CR>
-nnoremap ,sudo :-1read $HOME/.vim/skeleton/asroot.sh<CR>
-nnoremap ,cgi :-1read /home/metalx1000/.vim/skeleton/cgi.sh<CR>
-nnoremap ,chello :-1read /home/metalx1000/.vim/skeleton/chello.c<CR>jjjjf/
+nnoremap <leader>html :-1read $HOME/.vim/skeleton/bootlist.html<CR>3j9li
+nnoremap <leader>nav :-1read $HOME/.vim/skeleton/navbar<CR>/WebSite<CR>cit
+nnoremap <leader>modal :-1read $HOME/.vim/skeleton/modal<CR>
+nnoremap <leader>sudo :-1read $HOME/.vim/skeleton/asroot.sh<CR>
+nnoremap <leader>cgi :-1read /home/metalx1000/.vim/skeleton/cgi.sh<CR>
+nnoremap <leader>chello :-1read /home/metalx1000/.vim/skeleton/chello.c<CR>jjjjf/
 
-nnoremap ,getlist :-1read $HOME/.vim/skeleton/getlist.js<CR>i
+nnoremap <leader>getlist :-1read $HOME/.vim/skeleton/getlist.js<CR>i
 
 
 
@@ -93,15 +97,15 @@ nnoremap <F6> mq:set filetype=html<CR>gg=G'q
 set clipboard=unnamed
 
 
-ab bbb <button type="button" class="btn btn-primary btn-block"> </button><ESC>F c
-ab bbbb <div class="btn-group btn-group-justified"><CR>  <a class="btn btn-primary"> </a><CR></div><ESC>k3f c
-ab dcon <div class="container"> </div><ESC>F c
+iab bbb <button type="button" class="btn btn-primary btn-block"> </button><ESC>F c
+iab bbbb <div class="btn-group btn-group-justified"><CR>  <a class="btn btn-primary"> </a><CR></div><ESC>k3f c
+iab dcon <div class="container"> </div><ESC>F c
+iab postf function(){<CR>var url = 'submit.php';<CR>$.post( url, {data:'test'}, function( data ) {<CR>console.log( data );<CR>});<CR>}<ESC><CR>6kf(i
+iab ccc $(" ").click();<ESC>F c
+iab fff function  (){<CR><CR>}<ESC>2k2f c
+iab sss <script src=" "><script><ESC>F c
+iab iii <?php include(" ");?><ESC>F c
+iab listg <div class="container"><CR><h2>List Group With Linked Items</h2><CR><div class="list-group"><CR><a class="list-group-item">F</a><CR><a class="list-group-item">Second item</a><CR><a class="list-group-item">Third item</a><CR></div><CR></div><ESC>kkkkfFc
 
-ab postf function(){<CR>var url = 'submit.php';<CR>$.post( url, {data:'test'}, function( data ) {<CR>console.log( data );<CR>});<CR>}<ESC><CR>6kf(i
-ab ccc $(" ").click();<ESC>F c
-
-ab fff function  (){<CR><CR>}<ESC>2k2f c
-ab sss <script src=" "><script><ESC>F c
-ab iii <?php include(" ");?><ESC>F c
-
-ab listg <div class="container"><CR><h2>List Group With Linked Items</h2><CR><div class="list-group"><CR><a class="list-group-item">F</a><CR><a class="list-group-item">Second item</a><CR><a class="list-group-item">Third item</a><CR></div><CR></div><ESC>kkkkfFc
+iab Wq <ESC>i<DEL><ESC>:wq<CR>
+iab wq <ESC>i<DEL><ESC>:wq<CR>
