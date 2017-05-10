@@ -6,6 +6,7 @@ call vundle#rc()
 " This is the Vundle package, which can be found on GitHub.
 " " For GitHub repos, you specify plugins using the
 " " 'user/repository' format
+" :PluginInstall to install
 Plugin 'gmarik/vundle'
 Plugin 'lukaszb/vim-web-indent'
 
@@ -13,7 +14,7 @@ Plugin 'lukaszb/vim-web-indent'
 syntax on
 set shiftwidth=2 softtabstop=2 expandtab
 
-"set leader 
+"set leader
 let mapleader = ","
 
 
@@ -34,22 +35,22 @@ function! WrapForTmux(s)
   if !exists('$TMUX')
     return a:s
   endif
- 
+
   let tmux_start = "\<Esc>Ptmux;"
   let tmux_end = "\<Esc>\\"
- 
+
   return tmux_start . substitute(a:s, "\<Esc>", "\<Esc>\<Esc>", 'g') . tmux_end
 endfunction
- 
+
 let &t_SI .= WrapForTmux("\<Esc>[?2004h")
 let &t_EI .= WrapForTmux("\<Esc>[?2004l")
- 
+
 function! XTermPasteBegin()
   set pastetoggle=<Esc>[201~
   set paste
   return ""
 endfunction
- 
+
 inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
 """"""END paste prevent indent
 
@@ -86,7 +87,7 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 "inoremap </ </<C-X><C-O>
 
 "line numbering
-set relativenumber 
+set relativenumber
 set number
 
 "remove all trailing whitespace by pressing F5
@@ -98,7 +99,7 @@ set clipboard=unnamed
 
 
 iab bbb <button type="button" class="btn btn-primary btn-block"> </button><ESC>F c
-iab bbbb <div class="btn-group btn-group-justified"><CR>  <a class="btn btn-primary"> </a><CR></div><ESC>k3f c
+iab bbbb <div class="btn-group btn-group-justified"><CR>  <a class="btn btn-primary"> </a><CR></div><ESC>kf>f c
 iab dcon <div class="container"> </div><ESC>F c
 iab postf function(){<CR>var url = 'submit.php';<CR>$.post( url, {data:'test'}, function( data ) {<CR>console.log( data );<CR>});<CR>}<ESC><CR>6kf(i
 iab ccc $(" ").click();<ESC>F c
@@ -109,3 +110,11 @@ iab listg <div class="container"><CR><h2>List Group With Linked Items</h2><CR><d
 
 iab Wq <ESC>i<DEL><ESC>:wq<CR>
 iab wq <ESC>i<DEL><ESC>:wq<CR>
+
+iab modalj $(" ").modal('toggle');<ESC>F c
+
+"force to use hjkl
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
