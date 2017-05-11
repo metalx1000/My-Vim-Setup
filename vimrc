@@ -30,6 +30,9 @@ command! W :w
 set path+=**
 set wildmenu
 
+""set theme to darkbackground
+set background=dark
+
 """"""Prevent indent on paste
 function! WrapForTmux(s)
   if !exists('$TMUX')
