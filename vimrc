@@ -74,6 +74,10 @@ nnoremap <leader>sudo :-1read $HOME/.vim/skeleton/asroot.sh<CR>
 nnoremap <leader>cgi :-1read /home/metalx1000/.vim/skeleton/cgi.sh<CR>
 nnoremap <leader>chello :-1read /home/metalx1000/.vim/skeleton/chello.c<CR>jjjjf/
 
+"phaser templates
+iab phaserhtml <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser.html<CR>3jf<f c
+iab phaserjs <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser.js<CR>
+
 nnoremap <leader>getlist :-1read $HOME/.vim/skeleton/getlist.js<CR>i
 
 
@@ -117,7 +121,7 @@ iab wq <ESC>i<DEL><ESC>:wq<CR>
 iab modalj $(" ").modal('toggle');<ESC>F c
 
 "force to use hjkl
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
+"map <up> <nop>
+"map <down> <nop>
+"map <left> <nop>
+"map <right> <nop>
