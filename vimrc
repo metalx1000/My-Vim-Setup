@@ -81,8 +81,8 @@ nnoremap <leader>getlist :-1read $HOME/.vim/skeleton/getlist.js<CR>i
 "phaser templates
 iab phhtml <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser.html<CR>3jf<f c
 iab phjs <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser.js<CR>
-iab phsprite var= game.add.sprite(200, 200, "");<ESC>F=i
-
+iab phsprite <ESC>^dwivar = game.add.sprite(200, 200, "'");<ESC>F=hpc  <ESC>f'c
+iab phclick <ESC>^dwpi.anchor.set(0.5);<CR><ESC>pi.inputEnabled = true;<CR><ESC>pi.events.onInputDown.add(, this);<ESC>F,i
 
 
 "CSS autocomplete Ctrl + x followed by  Ctrl + o
@@ -102,7 +102,8 @@ set number
 
 "remove all trailing whitespace by pressing F5
 nnoremap <F5> mp:let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>'pzz
-nnoremap <F6> mq:set filetype=html<CR>gg=G'q
+"nnoremap <F6> mq:set filetype=html<CR>gg=G'q
+nnoremap <F6> mqgg=G'q
 
 "uses system clipboard when yanking (center click)
 set clipboard=unnamed
