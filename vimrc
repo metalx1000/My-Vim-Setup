@@ -66,6 +66,9 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
+"sets dictionary files for iab
+set dictionary=~/.vim/skeleton/dic.lst
+
 "insert templates
 nnoremap <leader>html :-1read $HOME/.vim/skeleton/bootlist.html<CR>3j9li
 nnoremap <leader>nav :-1read $HOME/.vim/skeleton/navbar<CR>/WebSite<CR>cit
@@ -73,12 +76,12 @@ nnoremap <leader>modal :-1read $HOME/.vim/skeleton/modal<CR>
 nnoremap <leader>sudo :-1read $HOME/.vim/skeleton/asroot.sh<CR>
 nnoremap <leader>cgi :-1read /home/metalx1000/.vim/skeleton/cgi.sh<CR>
 nnoremap <leader>chello :-1read /home/metalx1000/.vim/skeleton/chello.c<CR>jjjjf/
+nnoremap <leader>getlist :-1read $HOME/.vim/skeleton/getlist.js<CR>i
 
 "phaser templates
-iab phaserhtml <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser.html<CR>3jf<f c
-iab phaserjs <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser.js<CR>
-
-nnoremap <leader>getlist :-1read $HOME/.vim/skeleton/getlist.js<CR>i
+iab phhtml <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser.html<CR>3jf<f c
+iab phjs <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser.js<CR>
+iab phsprite var= game.add.sprite(200, 200, "");<ESC>F=i
 
 
 
