@@ -71,10 +71,6 @@ set dictionary=~/.vim/skeleton/dic.lst
 
 "insert templates
 nnoremap <leader>html :-1read $HOME/.vim/skeleton/bootlist.html<CR>3j9li
-nnoremap <leader>nav :-1read $HOME/.vim/skeleton/navbar<CR>/WebSite<CR>cit
-nnoremap <leader>modal :-1read $HOME/.vim/skeleton/modal<CR>
-nnoremap <leader>sudo :-1read $HOME/.vim/skeleton/asroot.sh<CR>
-nnoremap <leader>cgi :-1read /home/metalx1000/.vim/skeleton/cgi.sh<CR>
 nnoremap <leader>chello :-1read /home/metalx1000/.vim/skeleton/chello.c<CR>jjjjf/
 nnoremap <leader>getlist :-1read $HOME/.vim/skeleton/getlist.js<CR>i
 
@@ -84,6 +80,10 @@ iab phjs <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser.js<CR>
 iab phsprite <ESC>^dwivar = game.add.sprite(200, 200, "'");<ESC>F=hpc  <ESC>f'c
 iab phclick <ESC>^dwpi.anchor.set(0.5);<CR><ESC>pi.inputEnabled = true;<CR><ESC>pi.events.onInputDown.add(, this);<ESC>F,i
 
+"Shell script templates
+iab shsudo <ESC>:-1read $HOME/.vim/skeleton/asroot.sh<CR>
+iab shcgi <ESC>:-1read /home/metalx1000/.vim/skeleton/cgi.sh<CR>
+iab shcolor <ESC>:-1read /home/metalx1000/.vim/skeleton/shcolor.sh<CR>
 
 "CSS autocomplete Ctrl + x followed by  Ctrl + o
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
@@ -108,21 +108,27 @@ nnoremap <F6> mqgg=G'q
 "uses system clipboard when yanking (center click)
 set clipboard=unnamed
 
+"php templates
+iab phpi <?php include(" ");?><ESC>F c
 
-iab bbb <button type="button" class="btn btn-primary btn-block"> </button><ESC>F c
-iab bbbb <div class="btn-group btn-group-justified"><CR>  <a class="btn btn-primary"> </a><CR></div><ESC>kf>f c
-iab dcon <div class="container"> </div><ESC>F c
-iab postf function(){<CR>var url = 'submit.php';<CR>$.post( url, {data:'test'}, function( data ) {<CR>console.log( data );<CR>});<CR>}<ESC><CR>6kf(i
-iab ccc $(" ").click();<ESC>F c
-iab fff function  (){<CR><CR>}<ESC>2k2f c
-iab sss <script src=" "><script><ESC>F c
-iab iii <?php include(" ");?><ESC>F c
-iab listg <div class="container"><CR><h2>List Group With Linked Items</h2><CR><div class="list-group"><CR><a class="list-group-item">F</a><CR><a class="list-group-item">Second item</a><CR><a class="list-group-item">Third item</a><CR></div><CR></div><ESC>kkkkfFc
+"jquery templates
+iab jqb <button type="button" class="btn btn-primary btn-block"> </button><ESC>F c
+iab jqbb <div class="btn-group btn-group-justified"><CR>  <a class="btn btn-primary"> </a><CR></div><ESC>kf>f c
+iab jqcon <div class="container"> </div><ESC>F c
+iab jqpost function(){<CR>var url = 'submit.php';<CR>$.post( url, {data:'test'}, function( data ) {<CR>console.log( data );<CR>});<CR>}<ESC><CR>6kf(i
+iab jqcl $(" ").click();<ESC>F c
+iab jqlist <div class="container"><CR><h2>List Group With Linked Items</h2><CR><div class="list-group"><CR><a class="list-group-item">F</a><CR><a class="list-group-item">Second item</a><CR><a class="list-group-item">Third item</a><CR></div><CR></div><ESC>kkkkfFc
+iab jqmodaltoggle $("#modal").modal('toggle');
+iab jqnav <ESC>:-1read $HOME/.vim/skeleton/navbar<CR>/WebSite<CR>cit
+iab jqmodal <ESC>:-1read $HOME/.vim/skeleton/modal.html<CR>
+
+"Javascript templates
+iab jsfun function  (){<CR><CR>}<ESC>2k2f c
+iab jssrc <script src=" "><script><ESC>F c
 
 iab Wq <ESC>i<DEL><ESC>:wq<CR>
 iab wq <ESC>i<DEL><ESC>:wq<CR>
 
-iab modalj $(" ").modal('toggle');<ESC>F c
 
 "force to use hjkl
 "map <up> <nop>
