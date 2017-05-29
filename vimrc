@@ -82,6 +82,7 @@ iab gcccolor <ESC>:-1read /home/metalx1000/.vim/skeleton/gcc/gcccolor.c<CR>jjjjf
 iab phahtml <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser.html<CR>3jf<f c
 iab phajs <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser.js<CR>
 iab phasprite <ESC>^dwivar = game.add.sprite(200, 200, "'");<ESC>F=hpc  <ESC>f'c
+iab phaloadimage <ESC>^dwigame.load.image("", "res/img/"");<ESC>5F"p<DEL><ESC>2f"c
 iab phaclick <ESC>^dwpi.anchor.set(0.5);<CR><ESC>pi.inputEnabled = true;<CR><ESC>pi.events.onInputDown.add(, this);<ESC>F,i
 
 "Shell script templates
