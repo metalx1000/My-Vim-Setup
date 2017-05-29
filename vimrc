@@ -75,6 +75,8 @@ nnoremap <leader>getlist :-1read $HOME/.vim/skeleton/getlist.js<CR>i
 
 "c programming templates
 iab gcchello <ESC>:-1read /home/metalx1000/.vim/skeleton/chello.c<CR>jjjjf/
+iab gccdir <ESC>:-1read /home/metalx1000/.vim/skeleton/gcc/gccdir.c<CR>jjjjf/
+iab gcccolor <ESC>:-1read /home/metalx1000/.vim/skeleton/gcc/gcccolor.c<CR>jjjjf/
 
 "phaser templates
 iab phahtml <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser.html<CR>3jf<f c
