@@ -69,16 +69,18 @@ endif
 "sets dictionary files for iab
 set dictionary=~/.vim/skeleton/dic.lst
 
-"insert templates
+"insert bootstrap templates
 nnoremap <leader>html :-1read $HOME/.vim/skeleton/bootlist.html<CR>3j9li
-nnoremap <leader>chello :-1read /home/metalx1000/.vim/skeleton/chello.c<CR>jjjjf/
 nnoremap <leader>getlist :-1read $HOME/.vim/skeleton/getlist.js<CR>i
 
+"c programming templates
+iab gcchello <ESC>:-1read /home/metalx1000/.vim/skeleton/chello.c<CR>jjjjf/
+
 "phaser templates
-iab phhtml <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser.html<CR>3jf<f c
-iab phjs <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser.js<CR>
-iab phsprite <ESC>^dwivar = game.add.sprite(200, 200, "'");<ESC>F=hpc  <ESC>f'c
-iab phclick <ESC>^dwpi.anchor.set(0.5);<CR><ESC>pi.inputEnabled = true;<CR><ESC>pi.events.onInputDown.add(, this);<ESC>F,i
+iab phahtml <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser.html<CR>3jf<f c
+iab phajs <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser.js<CR>
+iab phasprite <ESC>^dwivar = game.add.sprite(200, 200, "'");<ESC>F=hpc  <ESC>f'c
+iab phaclick <ESC>^dwpi.anchor.set(0.5);<CR><ESC>pi.inputEnabled = true;<CR><ESC>pi.events.onInputDown.add(, this);<ESC>F,i
 
 "Shell script templates
 iab shsudo <ESC>:-1read $HOME/.vim/skeleton/asroot.sh<CR>
