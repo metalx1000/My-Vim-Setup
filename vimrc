@@ -74,14 +74,17 @@ nnoremap <leader>html :-1read $HOME/.vim/skeleton/bootlist.html<CR>3j9li
 nnoremap <leader>getlist :-1read $HOME/.vim/skeleton/getlist.js<CR>i
 
 "c programming templates
-iab gcchello <ESC>:-1read /home/metalx1000/.vim/skeleton/chello.c<CR>jjjjf/
-iab gccdir <ESC>:-1read /home/metalx1000/.vim/skeleton/gcc/gccdir.c<CR>jjjjf/
-iab gcccolor <ESC>:-1read /home/metalx1000/.vim/skeleton/gcc/gcccolor.c<CR>jjjjf/
+iab gcchello <ESC>:-1read /home/metalx1000/.vim/skeleton/chello.c<CR>jjjjf/i
+iab gccdir <ESC>:-1read /home/metalx1000/.vim/skeleton/gcc/gccdir.c<CR>i
+iab gcccolor <ESC>:-1read /home/metalx1000/.vim/skeleton/gcc/gcccolor.c<CR>i
+iab gccyn <ESC>:-1read /home/metalx1000/.vim/skeleton/gcc/gccyn.c<CR>i
 
 "phaser templates
 iab phahtml <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser.html<CR>3jf<f c
 iab phajs <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser.js<CR>
-iab phasprite <ESC>^dwivar = game.add.sprite(200, 200, "'");<ESC>F=hpc  <ESC>f'c
+iab phamousefollow <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser/followMouse.js<CR>
+iab phaphysics <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser/physics.js<CR>f-c
+iab phasprite <ESC>^dwivar = game.add.sprite(200, 200, "'");<ESC>F=hp$i<CR><ESC>pi.anchor.setTo(0.5, 0.5);<ESC>kf'c
 iab phaloadimage <ESC>^dwigame.load.image("", "res/img/"");<ESC>5F"p<DEL><ESC>2f"c
 iab phaclick <ESC>^dwpi.anchor.set(0.5);<CR><ESC>pi.inputEnabled = true;<CR><ESC>pi.events.onInputDown.add(, this);<ESC>F,i
 
@@ -114,7 +117,7 @@ nnoremap <F6> mqgg=G'q
 set clipboard=unnamed
 
 "php templates
-iab phpi <?php include(" ");?><ESC>F c
+iab phpinclude <?php include(" ");?><ESC>F c
 
 "jquery templates
 iab jqb <button type="button" class="btn btn-primary btn-block"> </button><ESC>F c
