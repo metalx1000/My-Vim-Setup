@@ -111,7 +111,7 @@ set number
 "remove all trailing whitespace by pressing F5
 nnoremap <F5> mp:let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>'pzz
 "nnoremap <F6> mq:set filetype=html<CR>gg=G'q
-nnoremap <F6> mqgg=G'q
+nnoremap <F6> mqgg=G'qzz
 
 "uses system clipboard when yanking (center click)
 set clipboard=unnamed
