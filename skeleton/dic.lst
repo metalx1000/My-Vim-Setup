@@ -6,7 +6,8 @@ phahtml
 phabackgroundcolor
 phajs
 phagravity
-phamousefollow
+phafollowmouse
+phamousedown
 phaphysics
 phasprite
 phaloadimage
