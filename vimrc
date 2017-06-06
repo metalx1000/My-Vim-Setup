@@ -81,12 +81,16 @@ iab gccyn <ESC>:-1read /home/metalx1000/.vim/skeleton/gcc/gccyn.c<CR>i
 
 "phaser templates
 iab phahtml <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser.html<CR>3jf<f c
+iab phabackgroundcolor <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser/backgroundcolor.js<CR>
 iab phajs <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser.js<CR>
+iab phagravity <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser/gravity.js<CR>
 iab phamousefollow <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser/followMouse.js<CR>
 iab phaphysics <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser/physics.js<CR>f-c
 iab phasprite <ESC>^dwivar = game.add.sprite(200, 200, "'");<ESC>F=hp$i<CR><ESC>pi.anchor.setTo(0.5, 0.5);<ESC>kf'c
 iab phaloadimage <ESC>^dwigame.load.image("", "res/img/"");<ESC>5F"p<DEL><ESC>2f"c
-iab phaclick <ESC>^dwpi.anchor.set(0.5);<CR><ESC>pi.inputEnabled = true;<CR><ESC>pi.events.onInputDown.add(, this);<ESC>F,i
+iab phafade <ESC>igame.add.tween().to( { alpha: [.1,1] }, 2000, "Linear", true);<ESC>2F(a
+iab phaclick <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser/clickable.js<CR>
+"iab phaclick <ESC>^dwpi.anchor.set(0.5);<CR><ESC>pi.inputEnabled = true;<CR><ESC>pi.events.onInputDown.add(, this);<ESC>F,i
 
 "Shell script templates
 iab shsudo <ESC>:-1read $HOME/.vim/skeleton/asroot.sh<CR>

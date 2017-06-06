@@ -3,11 +3,14 @@ gccdir
 gcccolor
 gccyn
 phahtml
+phabackgroundcolor
 phajs
+phagravity
 phamousefollow
 phaphysics
 phasprite
 phaloadimage
+phafade
 phaclick
 shsudo
 shcgi
