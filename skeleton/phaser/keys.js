@@ -6,6 +6,7 @@ function keys(obj,speed){
   var right = game.input.keyboard.isDown(Phaser.Keyboard.RIGHT)
   var up = game.input.keyboard.isDown(Phaser.Keyboard.UP)
   var down = game.input.keyboard.isDown(Phaser.Keyboard.DOWN)
+  var space = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
 
   if (left){
     obj.x -= speed;
@@ -19,6 +20,10 @@ function keys(obj,speed){
   }
   else if (down){
     obj.y += speed;
+  }
+
+  if (space){
+
   }
 }
 
