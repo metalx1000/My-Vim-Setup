@@ -1,6 +1,6 @@
 function gravity(sprite,world,bounce,gravity){
   if(typeof world === "undefined"){world = true;}
-  if(typeof bounce === "undefined"){bounce = 0.8}
+  if(typeof bounce === "undefined"){bounce = 0.2}
   if(typeof gravity === "undefined"){gravity = 200}
 
   //don't forget to start system physics
