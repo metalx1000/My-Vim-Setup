@@ -1,4 +1,4 @@
-function mouseFollow(obj,vel) {
+function followMouse(obj,vel) {
   if(typeof vel === "undefined"){vel = 400;}
   //If you've set physics for this obj already you can comment the next line out
   game.physics.enable(obj, Phaser.Physics.ARCADE);
