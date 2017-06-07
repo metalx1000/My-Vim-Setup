@@ -86,6 +86,7 @@ iab phajs <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser.js<CR>
 iab phagravity <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser/gravity.js<CR>
 iab phafollowmouse <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser/followMouse.js<CR>
 iab phamousedown <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser/onmousedown.js<CR>
+iab phakeys <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser/keys.js<CR>
 iab phaphysics <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser/physics.js<CR>f-c
 iab phasprite <ESC>^dwivar = game.add.sprite(200, 200, "'");<ESC>F=hp$i<CR><ESC>pi.anchor.setTo(0.5, 0.5);<ESC>kf'c
 iab phaloadimage <ESC>^dwigame.load.image("", "res/img/"");<ESC>5F"p<DEL><ESC>2f"c
