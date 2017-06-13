@@ -95,7 +95,8 @@ iab phaclick <ESC>:-1read /home/metalx1000/.vim/skeleton/phaser/clickable.js<CR>
 "iab phaclick <ESC>^dwpi.anchor.set(0.5);<CR><ESC>pi.inputEnabled = true;<CR><ESC>pi.events.onInputDown.add(, this);<ESC>F,i
 
 """ThreeJS templates
-iab threejscube <ESC>:-1read /home/metalx1000/.vim/skeleton/threejs/cube.js<CR>
+iab 3jscube <ESC>:-1read /home/metalx1000/.vim/skeleton/threejs/cube.js<CR>
+iab 3jsclick <ESC>:-1read /home/metalx1000/.vim/skeleton/threejs/clicked.js<CR>
 
 "Shell script templates
 iab shsudo <ESC>:-1read $HOME/.vim/skeleton/asroot.sh<CR>
