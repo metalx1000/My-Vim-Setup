@@ -140,6 +140,7 @@ iab btcollapse <ESC>:-1read $HOME/.vim/skeleton/bootstrap/collapsible.html<CR>
 iab btinput <ESC>:-1read $HOME/.vim/skeleton/bootstrap/input.html<CR>
 iab btpassword <ESC>:-1read $HOME/.vim/skeleton/bootstrap/password.html<CR>
 iab btmedia <ESC>:-1read $HOME/.vim/skeleton/bootstrap/media.html<CR>
+iab btcarousel <ESC>:-1read $HOME/.vim/skeleton/bootstrap/carousel.html<CR>
 iab btmedianested <ESC>:-1read $HOME/.vim/skeleton/bootstrap/medianested.html<CR>
 iab btbmodal <ESC>:-1read $HOME/.vim/skeleton/boostrap/modal.html<CR>
 iab bttable <ESC>:-1read $HOME/.vim/skeleton/bootstrap/table.html<CR>
