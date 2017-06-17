@@ -139,9 +139,9 @@ iab btprogessbar <ESC>:-1read $HOME/.vim/skeleton/bootstrap/progressbar.html<CR>
 iab btcollapse <ESC>:-1read $HOME/.vim/skeleton/bootstrap/collapsible.html<CR>
 iab btinput <ESC>:-1read $HOME/.vim/skeleton/bootstrap/input.html<CR>
 iab btpassword <ESC>:-1read $HOME/.vim/skeleton/bootstrap/password.html<CR>
-iab btmedia <ESC>:-1read $HOME/.vim/skeleton/bootstrap/media.html<CR>
+iab btmedia <ESC>:-1read $HOME/.vim/skeleton/bootstrap/meida1.html<CR>
 iab btcarousel <ESC>:-1read $HOME/.vim/skeleton/bootstrap/carousel.html<CR>
-iab btmedianested <ESC>:-1read $HOME/.vim/skeleton/bootstrap/medianested.html<CR>
+iab btmedianested <ESC>:-1read $HOME/.vim/skeleton/bootstrap/meidanested.html<CR>
 iab btbmodal <ESC>:-1read $HOME/.vim/skeleton/boostrap/modal.html<CR>
 iab bttable <ESC>:-1read $HOME/.vim/skeleton/bootstrap/table.html<CR>
 iab btimgcorner <ESC>:-1read $HOME/.vim/skeleton/bootstrap/imgcorner.html<CR>
@@ -163,6 +163,8 @@ iab jqmodaltoggle $("#modal").modal('toggle');
 "Javascript templates
 iab jsfun function  (){<CR><CR>}<ESC>2k2f c
 iab jssrc <script src=" "><script><ESC>F c
+iab jskeydown <ESC>:-1read $HOME/.vim/skeleton/js/onkeydown.js<CR>
+iab jskeyup <ESC>:-1read $HOME/.vim/skeleton/js/onkeyup.js<CR>
 
 iab Wq <ESC>i<DEL><ESC>:wq<CR>
 iab wq <ESC>i<DEL><ESC>:wq<CR>
