@@ -24,11 +24,13 @@ btb
 btbb
 btbcon
 btnav
+btnav_sticky
 btprogessbar
 btcollapse
 btinput
 btpassword
 btmedia
+btfooter_sticky
 btcarousel
 btmedianested
 btbmodal
