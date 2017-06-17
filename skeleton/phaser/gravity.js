@@ -1,11 +1,3 @@
-function gravity(sprite,world,bounce,gravity){
-  if(typeof world === "undefined"){world = true;}
-  if(typeof bounce === "undefined"){bounce = 0.2}
-  if(typeof gravity === "undefined"){gravity = 200}
+//add gravity to sprite -- don't forget to change sprite
+gravity({sprite:player, bounce: 0.5, world: true, gravity: 1500});
 
-  //don't forget to start system physics
-  game.physics.enable(sprite, Phaser.Physics.ARCADE);
-  sprite.body.collideWorldBounds = world;
-  sprite.body.bounce.set(bounce);
-  sprite.body.gravity.y = gravity;
-}
