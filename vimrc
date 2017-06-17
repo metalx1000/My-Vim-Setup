@@ -135,6 +135,12 @@ iab btb <ESC>:-1read $HOME/.vim/skeleton/bootstrap/button.html<CR>f>
 iab btbb <ESC>:-1read $HOME/.vim/skeleton/bootstrap/buttongroup.html<CR>jf>
 iab btbcon <div class="container"> </div><ESC>F c
 iab btnav <ESC>:-1read $HOME/.vim/skeleton/bootstrap/navbar<CR>/WebSite<CR>cit
+iab btprogessbar <ESC>:-1read $HOME/.vim/skeleton/bootstrap/progressbar.html<CR>
+iab btcollapse <ESC>:-1read $HOME/.vim/skeleton/bootstrap/collapsible.html<CR>
+iab btinput <ESC>:-1read $HOME/.vim/skeleton/bootstrap/input.html<CR>
+iab btpassword <ESC>:-1read $HOME/.vim/skeleton/bootstrap/password.html<CR>
+iab btmedia <ESC>:-1read $HOME/.vim/skeleton/bootstrap/media.html<CR>
+iab btmedianested <ESC>:-1read $HOME/.vim/skeleton/bootstrap/medianested.html<CR>
 iab btbmodal <ESC>:-1read $HOME/.vim/skeleton/boostrap/modal.html<CR>
 iab bttable <ESC>:-1read $HOME/.vim/skeleton/bootstrap/table.html<CR>
 iab btimgcorner <ESC>:-1read $HOME/.vim/skeleton/bootstrap/imgcorner.html<CR>
