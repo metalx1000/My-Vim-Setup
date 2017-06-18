@@ -81,18 +81,16 @@ iab gcccolor <ESC>:-1read $HOME/.vim/skeleton/gcc/gcccolor.c<CR>i
 iab gccyn <ESC>:-1read $HOME/.vim/skeleton/gcc/gccyn.c<CR>i
 
 "phaser templates
-iab phahtml <ESC>:-1read $HOME/.vim/skeleton/phaser.html<CR>3jf<f c
-iab phabackgroundcolor <ESC>:-1read $HOME/.vim/skeleton/phaser/backgroundcolor.js<CR>
-iab phajs <ESC>:-1read $HOME/.vim/skeleton/phaser.js<CR>
-iab phagravity <ESC>:-1read $HOME/.vim/skeleton/phaser/gravity.js<CR>
-iab phafollowmouse <ESC>:-1read $HOME/.vim/skeleton/phaser/followMouse.js<CR>
-iab phamousedown <ESC>:-1read $HOME/.vim/skeleton/phaser/onmousedown.js<CR>
-iab phakeys <ESC>:-1read $HOME/.vim/skeleton/phaser/keys.js<CR>
+iab phabackgroundcolor <ESC>:-1read $HOME/.vim/skeleton/phaser/backgroundcolor.js<CR><F6>
+iab phagravity <ESC>:-1read $HOME/.vim/skeleton/phaser/gravity.js<CR><F6>
+iab phafollowmouse <ESC>:-1read $HOME/.vim/skeleton/phaser/followMouse.js<CR><F6>
+iab phamousedown <ESC>:-1read $HOME/.vim/skeleton/phaser/onmousedown.js<CR><F6>
+iab phakeys <ESC>:-1read $HOME/.vim/skeleton/phaser/keys.js<CR><F6>
 iab phaphysics <ESC>:-1read $HOME/.vim/skeleton/phaser/physics.js<CR>f-c
-iab phasprite <ESC>:-1read $HOME/.vim/skeleton/phaser/sprite.js<CR>f-c
+iab phasprite <ESC>:-1read $HOME/.vim/skeleton/phaser/sprite.js<CR><F6>
 iab phaloadimage <ESC>^dwigame.load.image("", "res/img/"");<ESC>5F"p<DEL><ESC>2f"c
 iab phafade <ESC>igame.add.tween().to( { alpha: [.1,1] }, 2000, "Linear", true);<ESC>2F(a
-iab phaclick <ESC>:-1read $HOME/.vim/skeleton/phaser/clickable.js<CR>
+iab phaclick <ESC>:-1read $HOME/.vim/skeleton/phaser/clickable.js<CR><F6>
 "iab phaclick <ESC>^dwpi.anchor.set(0.5);<CR><ESC>pi.inputEnabled = true;<CR><ESC>pi.events.onInputDown.add(, this);<ESC>F,i
 
 """ThreeJS templates
