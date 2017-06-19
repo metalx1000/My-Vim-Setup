@@ -88,6 +88,7 @@ iab phamousedown <ESC>:-1read $HOME/.vim/skeleton/phaser/onmousedown.js<CR><F6>
 iab phakeys <ESC>:-1read $HOME/.vim/skeleton/phaser/keys.js<CR><F6>
 iab phaphysics <ESC>:-1read $HOME/.vim/skeleton/phaser/physics.js<CR>f-c
 iab phasprite <ESC>:-1read $HOME/.vim/skeleton/phaser/sprite.js<CR><F6>
+iab phapaint1 <ESC>:-1read $HOME/.vim/skeleton/phaser/paint1.js<CR><F6>
 iab phaloadimage <ESC>^dwigame.load.image("", "res/img/"");<ESC>5F"p<DEL><ESC>2f"c
 iab phafade <ESC>igame.add.tween().to( { alpha: [.1,1] }, 2000, "Linear", true);<ESC>2F(a
 iab phaclick <ESC>:-1read $HOME/.vim/skeleton/phaser/clickable.js<CR><F6>
