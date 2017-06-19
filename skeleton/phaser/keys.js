@@ -1,5 +1,9 @@
-function keys(obj,speed){
-  if(typeof speed === "undefined"){speed = 5}
+function keys(sprite){
+  if(typeof sprite.speed === "undefined"){
+    var speed = 5;
+  }else{
+    var speed = sprite.speed;
+  }
   // Check key states every frame.
   // Move ONLY one of the left and right key is hold.
   var left = game.input.keyboard.isDown(Phaser.Keyboard.LEFT)
@@ -9,17 +13,17 @@ function keys(obj,speed){
   var space = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
 
   if (left){
-    obj.x -= speed;
+    sprite.x -= speed;
   }
   else if (right){
-    obj.x += speed;
+    sprite.x += speed;
   }
 
   if (up){
-    obj.y -= speed;
+    sprite.y -= speed;
   }
   else if (down){
-    obj.y += speed;
+    sprite.y += speed;
   }
 
   if (space){
