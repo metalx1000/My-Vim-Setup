@@ -1,10 +1,2 @@
-function mouseDown(){
-  //  only move when you click
-  if (game.input.activePointer.isDown){
-
-  }
-  else{
-
-  }
-}
-
+//On MouseDown anywhere in game
+mouseDown({sprite:player,onClick:test,onRelease:function(){}}); 
