@@ -97,6 +97,9 @@ iab phaclick <ESC>:-1read $HOME/.vim/skeleton/phaser/clickable.js<CR><F6>
 """ThreeJS templates
 iab 3jscube <ESC>:-1read $HOME/.vim/skeleton/threejs/cube.js<CR>
 iab 3jsclick <ESC>:-1read $HOME/.vim/skeleton/threejs/clicked.js<CR>
+iab 3jscameraRotate <ESC>:-1read $HOME/.vim/skeleton/threejs/cameraRotate.js<CR>
+iab 3jscylinder <ESC>:-1read $HOME/.vim/skeleton/threejs/cylinder.js<CR>
+iab 3jselected <ESC>:-1read $HOME/.vim/skeleton/threejs/allSelected.js<CR>
 
 "Shell script templates
 iab shsudo <ESC>:-1read $HOME/.vim/skeleton/asroot.sh<CR>
