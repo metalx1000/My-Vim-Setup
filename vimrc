@@ -100,6 +100,7 @@ iab 3jsclick <ESC>:-1read $HOME/.vim/skeleton/threejs/clicked.js<CR>
 iab 3jscameraRotate <ESC>:-1read $HOME/.vim/skeleton/threejs/cameraRotate.js<CR>
 iab 3jscylinder <ESC>:-1read $HOME/.vim/skeleton/threejs/cylinder.js<CR>
 iab 3jselected <ESC>:-1read $HOME/.vim/skeleton/threejs/allSelected.js<CR>
+iab 3jdae <ESC>:-1read $HOME/.vim/skeleton/threejs/loadDAE.js<CR>
 
 "Shell script templates
 iab shsudo <ESC>:-1read $HOME/.vim/skeleton/asroot.sh<CR>
