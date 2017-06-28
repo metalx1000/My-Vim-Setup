@@ -92,6 +92,9 @@ iab phapaint1 <ESC>:-1read $HOME/.vim/skeleton/phaser/paint1.js<CR><F6>
 iab phaloadimage <ESC>^dwigame.load.image("", "res/img/"");<ESC>5F"p<DEL><ESC>2f"c
 iab phafade <ESC>igame.add.tween().to( { alpha: [.1,1] }, 2000, "Linear", true);<ESC>2F(a
 iab phaclick <ESC>:-1read $HOME/.vim/skeleton/phaser/clickable.js<CR><F6>
+iab phacollide <ESC>:-1read $HOME/.vim/skeleton/phaser/collide.js<CR><F6>
+iab phacameraFollow <ESC>:-1read $HOME/.vim/skeleton/phaser/cameraFollow.js<CR><F6>
+iab phaloadMap <ESC>:-1read $HOME/.vim/skeleton/phaser/loadMap.js<CR><F6>
 "iab phaclick <ESC>^dwpi.anchor.set(0.5);<CR><ESC>pi.inputEnabled = true;<CR><ESC>pi.events.onInputDown.add(, this);<ESC>F,i
 
 """ThreeJS templates

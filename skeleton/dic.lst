@@ -13,6 +13,9 @@ phapaint1
 phaloadimage
 phafade
 phaclick
+phacollide
+phacameraFollow
+phaloadMap
 3jscube
 3jsclick
 3jscameraRotate
