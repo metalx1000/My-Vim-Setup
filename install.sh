@@ -7,4 +7,5 @@ cp -v tmux.conf ~/.tmux.conf
 
 mkdir ~/.vim/skeleton
 cp -vr skeleton/* ~/.vim/skeleton/
-grep "^iab" ~/.vimrc|awk '{print $2}' > ~/.vim/skeleton/dic.lst
+
+sed -i 's/\/home\/metalx1000/$HOME/g' ~/.vimrc;grep "^iab" ~/.vimrc|awk '{print $2}' > ~/.vim/skeleton/dic.lst

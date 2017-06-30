@@ -110,6 +110,9 @@ iab shsudo <ESC>:-1read $HOME/.vim/skeleton/asroot.sh<CR>
 iab shcgi <ESC>:-1read $HOME/.vim/skeleton/cgi.sh<CR>
 iab shcolor <ESC>:-1read $HOME/.vim/skeleton/shcolor.sh<CR>
 
+"Python Scritp Templates
+iab pyhead <ESC>:-1read $HOME/.vim/skeleton/python/head.py<CR>
+
 "CSS autocomplete Ctrl + x followed by  Ctrl + o
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
