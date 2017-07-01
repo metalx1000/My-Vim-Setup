@@ -26,6 +26,8 @@ shsudo
 shcgi
 shcolor
 pyhead
+pydownloadText
+pydownloadFile
 phpinclude
 btb
 btbb
