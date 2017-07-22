@@ -23,6 +23,7 @@ let mapleader = ","
 "filetype indent on
 filetype plugin indent on
 au BufEnter,BufNew *.php :set filetype=html
+au BufEnter,BufNew *.php :set syntax=php
 
 command! Wq :wq
 command! W :w
