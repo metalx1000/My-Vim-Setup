@@ -77,9 +77,11 @@ nnoremap <leader>getlist :-1read $HOME/.vim/skeleton/getlist.js<CR>i
 
 "c programming templates
 iab gcchello <ESC>:-1read $HOME/.vim/skeleton/chello.c<CR>jjjjf/i
-iab gccdir <ESC>:-1read $HOME/.vim/skeleton/gcc/gccdir.c<CR>i
-iab gcccolor <ESC>:-1read $HOME/.vim/skeleton/gcc/gcccolor.c<CR>i
-iab gccyn <ESC>:-1read $HOME/.vim/skeleton/gcc/gccyn.c<CR>i
+iab gccdir <ESC>:-1read $HOME/.vim/skeleton/gcc/gccdir.c<CR><F6>
+iab gcccolor <ESC>:-1read $HOME/.vim/skeleton/gcc/gcccolor.c<CR><F6>
+iab gccyn <ESC>:-1read $HOME/.vim/skeleton/gcc/gccyn.c<CR><F6>
+iab gccinput <ESC>:-1read $HOME/.vim/skeleton/gcc/gccinput.c<CR><F6>
+iab gccenterToContinue <ESC>:-1read $HOME/.vim/skeleton/gcc/gccentercontinue.c<CR><F6>
 
 "phaser templates
 iab phabackgroundcolor <ESC>:-1read $HOME/.vim/skeleton/phaser/backgroundcolor.js<CR><F6>
