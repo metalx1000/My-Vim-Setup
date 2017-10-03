@@ -172,7 +172,8 @@ iab btalert_danger <ESC>:-1read $HOME/.vim/skeleton/bootstrap/alertdanger.html<C
 iab btlist <ESC>:-1read $HOME/.vim/skeleton/bootstrap/list.html<CR>
 
 "jquery templates
-iab jqpost function(){<CR>var url = 'submit.php';<CR>$.post( url, {data:'test'}, function( data ) {<CR>console.log( data );<CR>});<CR>}<ESC><CR>6kf(i
+"iab jqpost function(){<CR>var url = 'submit.php';<CR>$.post( url, {data:'test'}, function( data ) {<CR>console.log( data );<CR>});<CR>}
+iab jqpost <ESC>:-1read $HOME/.vim/skeleton/jq/post.js<CR>
 iab jqcl $(" ").click();<ESC>F c
 iab jqlist <div class="container"><CR><h2>List Group With Linked Items</h2><CR><div class="list-group"><CR><a class="list-group-item">F</a><CR><a class="list-group-item">Second item</a><CR><a class="list-group-item">Third item</a><CR></div><CR></div><ESC>kkkkfFc
 iab jqmodaltoggle $("#modal").modal('toggle');
