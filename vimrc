@@ -138,8 +138,11 @@ nnoremap <F5> mp:let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>'pzz
 "nnoremap <F6> mq:set filetype=html<CR>gg=G'q
 nnoremap <F6> mqgg=G'qzz
 
+"toggle set paste when F3 is clicked
+set pastetoggle=<F3>
+
 "uses system clipboard when yanking (center click)
-set clipboard=unnamed
+"set clipboard=unnamed
 
 "php templates
 iab phpinclude <?php include(" ");?><ESC>F c
