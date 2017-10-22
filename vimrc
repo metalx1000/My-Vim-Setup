@@ -76,7 +76,7 @@ nnoremap <leader>html :-1read $HOME/.vim/skeleton/bootstrap/index.html<CR>3j9li
 nnoremap <leader>getlist :-1read $HOME/.vim/skeleton/getlist.js<CR>i
 
 "c programming templates
-iab gcchello <ESC>:-1read $HOME/.vim/skeleton/chello.c<CR>jjjjf/i
+iab gcchello <ESC>:-1read $HOME/.vim/skeleton/gcc/chello.c<CR>jjjjf/i
 iab gccdir <ESC>:-1read $HOME/.vim/skeleton/gcc/gccdir.c<CR><F6>
 iab gcccolor <ESC>:-1read $HOME/.vim/skeleton/gcc/gcccolor.c<CR><F6>
 iab gccyn <ESC>:-1read $HOME/.vim/skeleton/gcc/gccyn.c<CR><F6>
