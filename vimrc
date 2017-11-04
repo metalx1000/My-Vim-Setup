@@ -173,6 +173,7 @@ iab btalert_info <ESC>:-1read $HOME/.vim/skeleton/bootstrap/alertinfo.html<CR>
 iab btalert_warning <ESC>:-1read $HOME/.vim/skeleton/bootstrap/alertwarning.html<CR>
 iab btalert_danger <ESC>:-1read $HOME/.vim/skeleton/bootstrap/alertdanger.html<CR>
 iab btlist <ESC>:-1read $HOME/.vim/skeleton/bootstrap/list.html<CR>
+iab btimagegrid <ESC>:-1read $HOME/.vim/skeleton/bootstrap/imggrid.html<CR>
 
 "jquery templates
 "iab jqpost function(){<CR>var url = 'submit.php';<CR>$.post( url, {data:'test'}, function( data ) {<CR>console.log( data );<CR>});<CR>}
