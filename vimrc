@@ -22,7 +22,7 @@ let mapleader = ","
 "set noautoindent
 "filetype indent on
 filetype plugin indent on
-au BufEnter,BufNew *.php :set filetype=html
+"au BufEnter,BufNew *.php :set filetype=html
 au BufEnter,BufNew *.php :set syntax=php
 
 command! Wq :wq
@@ -126,8 +126,12 @@ autocmd FileType js set omnifunc=javascriptcomplete#CompleteJS
 
 "html Autocomplete Ctrl + x followed by  Ctrl + o
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 "auto close tags on space
 "inoremap </ </<C-X><C-O>
+
+set tags=$HOME/.vim/tags
 
 "line numbering
 set relativenumber
