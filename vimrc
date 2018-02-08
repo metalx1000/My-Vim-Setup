@@ -147,6 +147,9 @@ nnoremap <F6> mqgg=G'qzz
 "toggle set paste when F3 is clicked
 set pastetoggle=<F3>
 
+"start spell check
+map <F9> :setlocal spell! spelllang=en_us<CR>
+
 "uses system clipboard when yanking (center click)
 "set clipboard=unnamed
 
